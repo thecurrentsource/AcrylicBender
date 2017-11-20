@@ -1,0 +1,26 @@
+___awdiv: CODE, 3422 0 188
+i2_write_char: CODE, 4944 0 40
+__stringdata: SMALLCONST, 2048 0 85
+_main: CODE, 3790 0 134
+_control_relay: CODE, 2734 0 256
+_write_char: CODE, 4856 0 44
+__initialization: CODE, 5024 0 12
+___lwdiv: CODE, 4160 0 108
+_led_bar: CODE, 3210 0 212
+_isr: CODE, 8 0 2726
+_write_command: CODE, 4900 0 44
+i2_string2screen: CODE, 4726 0 68
+_update_lcd_timer: CODE, 4268 0 106
+_clear_screen: CODE, 5050 0 24
+_string2screen: CODE, 4374 0 102
+i2_write_command: CODE, 4984 0 40
+i2_clear_screen: CODE, 5074 0 14
+___lwmod: CODE, 4476 0 92
+_clear_line: CODE, 3924 0 126
+_proc_string: CODE, 4050 0 110
+_initialize: CODE, 2990 0 220
+_itoa: CODE, 4652 0 74
+___wmul: CODE, 4794 0 62
+_utoa: CODE, 3610 0 180
+i2_proc_string: CODE, 4568 0 84
+Total: 5151

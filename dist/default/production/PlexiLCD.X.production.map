@@ -1,0 +1,1407 @@
+Microchip MPLAB XC8 Compiler V1.12 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.12\dat\en_msgs.txt -cs \
+  -h+dist/default/production\PlexiLCD.X.production.sym -z -Q18F4550 -ol.obj \
+  -Mdist/default/production/PlexiLCD.X.production.map -E1 -ver=XC8 \
+  -ACODE=00h-07FFFh -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
+  -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh -AABS1=00h-07FFh \
+  -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init,end_init \
+  -pramtop=0800h -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST \
+  -pconst=CONST -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F000FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
+  C:\Users\derek\AppData\Local\Temp\s53c.obj \
+  dist/default/production\PlexiLCD.X.production.obj 
+
+Object code version is 3.10
+
+Machine type is 18F4550
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\derek\AppData\Local\Temp\s53c.obj
+                end_init                             18       18        4        4       0
+                reset_vec                             0        0        4        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/default/production\PlexiLCD.X.production.obj
+                intcode                               8        8       10        4       0
+                smallconst                          800      800       56      400       0
+                text22                             1378     1378       28      42B       0
+                text21                             13D2     13D2        E      42B       0
+                text20                             1350     1350       28      42B       0
+                text19                             11D8     11D8       54      42B       0
+                text18                             1276     1276       44      42B       0
+                text17                             12BA     12BA       3E      42B       0
+                text16                             117C     117C       5C      42B       0
+                text15                             1040     1040       6C      42B       0
+                text14                              E1A      E1A       B4      42B       0
+                text13                              D5E      D5E       BC      42B       0
+                text12                             122C     122C       4A      42B       0
+                text11                              AAE      AAE      100      42B       0
+                text10                              F54      F54       7E      42B       0
+                text9                              10AC     10AC       6A      42B       0
+                text8                               C8A      C8A       D4      42B       0
+                intcode_body                        856      856      258      42B       0
+                text6                              1324     1324       2C      42B       0
+                text5                               BAE      BAE       DC      42B       0
+                text4                              13BA     13BA       18      42B       0
+                text3                              12F8     12F8       2C      42B       0
+                text2                               FD2      FD2       6E      42B       0
+                text1                              1116     1116       66      42B       0
+                text0                               ECE      ECE       86      42B       0
+                cstackCOMRAM                          1        1       3C        1       1
+                cstackBANK0                          60       60        C       60       1
+                bssCOMRAM                            3D       3D       13        1       1
+                cinit                              13A0     13A0       1A      42B       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                end_init                             18       18        4         0
+                intcode                               8        8       10         0
+                reset_vec                             0        0        4         0
+                text22                             1378     1378       28         0
+                text21                             13D2     13D2        E         0
+                text20                             1350     1350       28         0
+                text19                             11D8     11D8       54         0
+                text18                             1276     1276       44         0
+                text17                             12BA     12BA       3E         0
+                text16                             117C     117C       5C         0
+                text15                             1040     1040       6C         0
+                text14                              E1A      E1A       B4         0
+                text13                              D5E      D5E       BC         0
+                text12                             122C     122C       4A         0
+                text11                              AAE      AAE      100         0
+                text10                              F54      F54       7E         0
+                text9                              10AC     10AC       6A         0
+                text8                               C8A      C8A       D4         0
+                intcode_body                        856      856      258         0
+                text6                              1324     1324       2C         0
+                text5                               BAE      BAE       DC         0
+                text4                              13BA     13BA       18         0
+                text3                              12F8     12F8       2C         0
+                text2                               FD2      FD2       6E         0
+                text1                              1116     1116       66         0
+                text0                               ECE      ECE       86         0
+                cinit                              13A0     13A0       1A         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+                smallconst                          800      800       56         0
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+                cstackCOMRAM                          1        1       3C         1
+                bssCOMRAM                            3D       3D       13         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          60       60        C         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  00004F  000050         1       1  COMRAM  
+                intcode                        000008  000014  00001C         4       0  CODE    
+                cstackBANK0                    000060  00000C  00006C        60       1  BANK0   
+                smallconst                     000800  000056  000856       400       0  SMALLCON
+                intcode_body                   000856  000B8A  0013E0       42B       0  CODE    
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            00006C-0000FF               94
+        BANK1            000100-0001FF              100
+        BANK2            000200-0002FF              100
+        BANK3            000300-0003FF              100
+        BANK4            000400-0004FF              100
+        BANK5            000500-0005FF              100
+        BANK6            000600-0006FF              100
+        BANK7            000700-0007FF              100
+        BIGRAM           000050-00005F               10
+                         00006C-0007FF              794
+        CODE             000004-000007                4
+                         00001C-0007FF              7E4
+                         0013E0-007FFF             6C20
+        COMRAM           000050-00005F               10
+        CONST            000004-000007                4
+                         00001C-0007FF              7E4
+                         0013E0-007FFF             6C20
+        EEDATA           F00000-F000FF              100
+        MEDIUMCONST      0013E0-007FFF             6C20
+        RAM              00006C-0007FF              100
+        SFR              000F60-000FFF               A0
+        SMALLCONST       0013E0-007FFF              100
+
+                                  Symbol Table
+
+?___awdiv                  cstackCOMRAM 000007
+?___lwdiv                  cstackCOMRAM 000001
+?___lwmod                  cstackCOMRAM 000001
+?___wmul                   cstackCOMRAM 000001
+?_clear_line               cstackCOMRAM 000003
+?_control_relay            cstackCOMRAM 00001A
+?_itoa                     cstackCOMRAM 000012
+?_led_bar                  cstackCOMRAM 000001
+?_proc_string              cstackBANK0  000062
+?_string2screen            cstackBANK0  000064
+?_utoa                     cstackCOMRAM 000009
+?_write_char               cstackBANK0  000060
+?_write_command            cstackBANK0  000060
+?i2_proc_string            cstackCOMRAM 000003
+?i2_string2screen          cstackCOMRAM 000005
+?i2_write_char             cstackCOMRAM 000001
+?i2_write_command          cstackCOMRAM 000001
+_ADCON0                    (abs)        000FC2
+_ADCON0bits                (abs)        000FC2
+_ADCON1                    (abs)        000FC1
+_ADCON2                    (abs)        000FC0
+_ADRESH                    (abs)        000FC4
+_BURN_TIME                 bssCOMRAM    00003D
+_COOK_COUNT                bssCOMRAM    00003F
+_CUR_POTVAL                bssCOMRAM    000041
+_DISP_TIMER1               bssCOMRAM    000043
+_DISP_TIMER2               bssCOMRAM    000045
+_INTCONbits                (abs)        000FF2
+_ISRUNNING                 bssCOMRAM    000047
+_LATA                      (abs)        000F89
+_LATB                      (abs)        000F8A
+_LATC                      (abs)        000F8B
+_LATCbits                  (abs)        000F8B
+_LATD                      (abs)        000F8C
+_LATD0                     (abs)        007C60
+_LATD1                     (abs)        007C61
+_LATDbits                  (abs)        000F8C
+_LATE                      (abs)        000F8D
+_LATEbits                  (abs)        000F8D
+_OLDPRESS                  bssCOMRAM    000049
+_OLD_POTVAL                bssCOMRAM    00004B
+_OSCCON                    (abs)        000FD3
+_PIE1bits                  (abs)        000F9D
+_PIR1bits                  (abs)        000F9E
+_PORTAbits                 (abs)        000F80
+_PORTD                     (abs)        000F83
+_PRSCOUNT                  bssCOMRAM    00004D
+_T0CONbits                 (abs)        000FD5
+_T1CONbits                 (abs)        000FCD
+_TMR0H                     (abs)        000FD7
+_TMR0L                     (abs)        000FD6
+_TMR1H                     (abs)        000FCF
+_TMR1L                     (abs)        000FCE
+_TRISA                     (abs)        000F92
+_TRISB                     (abs)        000F93
+_TRISC                     (abs)        000F94
+_TRISD                     (abs)        000F95
+_TRISE                     (abs)        000F96
+__CFG_BOR$OFF              (abs)        000000
+__CFG_BORV$3               (abs)        000000
+__CFG_CCP2MX$OFF           (abs)        000000
+__CFG_CP0$OFF              (abs)        000000
+__CFG_CP1$OFF              (abs)        000000
+__CFG_CP2$OFF              (abs)        000000
+__CFG_CP3$OFF              (abs)        000000
+__CFG_CPB$OFF              (abs)        000000
+__CFG_CPD$OFF              (abs)        000000
+__CFG_CPUDIV$OSC1_PLL2     (abs)        000000
+__CFG_EBTR0$OFF            (abs)        000000
+__CFG_EBTR1$OFF            (abs)        000000
+__CFG_EBTR2$OFF            (abs)        000000
+__CFG_EBTR3$OFF            (abs)        000000
+__CFG_EBTRB$OFF            (abs)        000000
+__CFG_FCMEN$OFF            (abs)        000000
+__CFG_FOSC$INTOSC_HS       (abs)        000000
+__CFG_ICPRT$OFF            (abs)        000000
+__CFG_IESO$OFF             (abs)        000000
+__CFG_LPT1OSC$OFF          (abs)        000000
+__CFG_LVP$OFF              (abs)        000000
+__CFG_MCLRE$ON             (abs)        000000
+__CFG_PBADEN$OFF           (abs)        000000
+__CFG_PLLDIV$1             (abs)        000000
+__CFG_PWRT$OFF             (abs)        000000
+__CFG_STVREN$OFF           (abs)        000000
+__CFG_USBDIV$1             (abs)        000000
+__CFG_VREGEN$OFF           (abs)        000000
+__CFG_WDT$OFF              (abs)        000000
+__CFG_WDTPS$32768          (abs)        000000
+__CFG_WRT0$OFF             (abs)        000000
+__CFG_WRT1$OFF             (abs)        000000
+__CFG_WRT2$OFF             (abs)        000000
+__CFG_WRT3$OFF             (abs)        000000
+__CFG_WRTB$OFF             (abs)        000000
+__CFG_WRTC$OFF             (abs)        000000
+__CFG_WRTD$OFF             (abs)        000000
+__CFG_XINST$OFF            (abs)        000000
+__HRAM                     (abs)        000000
+__Habs1                    abs1         000000
+__Hbank0                   bank0        000000
+__Hbank1                   bank1        000000
+__Hbank2                   bank2        000000
+__Hbank3                   bank3        000000
+__Hbank4                   bank4        000000
+__Hbank5                   bank5        000000
+__Hbank6                   bank6        000000
+__Hbank7                   bank7        000000
+__Hbigbss                  bigbss       000000
+__Hbigdata                 bigdata      000000
+__Hbigram                  bigram       000000
+__Hbss                     bss          000000
+__HbssCOMRAM               bssCOMRAM    000000
+__Hcinit                   cinit        000000
+__Hclrtext                 clrtext      000000
+__Hcomram                  comram       000000
+__Hconfig                  config       30000E
+__Hconst                   const        000000
+__HcstackBANK0             cstackBANK0  000000
+__HcstackCOMRAM            cstackCOMRAM 000000
+__Hdata                    data         000000
+__Heeprom_data             eeprom_data  000000
+__Hend_init                end_init     00001C
+__Hfarbss                  farbss       000000
+__Hfardata                 fardata      000000
+__Hibigdata                ibigdata     000000
+__Hidata                   idata        000000
+__Hidloc                   idloc        200008
+__Hifardata                ifardata     000000
+__Hinit                    init         000018
+__Hintcode                 intcode      000018
+__Hintcode_body            intcode_body 000000
+__Hintcodelo               intcodelo    000018
+__Hintentry                intentry     000000
+__Hintret                  intret       000000
+__Hintsave_regs            intsave_regs 000000
+__Hirdata                  irdata       000000
+__Hmediumconst             mediumconst  000000
+__Hnvbit                   nvbit        000000
+__Hnvrram                  nvrram       000000
+__Hparam                   rparam       000000
+__Hpowerup                 powerup      000018
+__Hram                     ram          000000
+__Hramtop                  ramtop       000800
+__Hrbit                    rbit         000000
+__Hrbss                    rbss         000000
+__Hrdata                   rdata        000000
+__Hreset_vec               reset_vec    000004
+__Hrparam                  rparam       000000
+__Hsfr                     sfr          000000
+__Hsmallconst              smallconst   000856
+__Hstruct                  struct       000000
+__Htemp                    temp         000000
+__Htext                    text         000000
+__Htext0                   text0        000000
+__Htext1                   text1        000000
+__Htext10                  text10       000000
+__Htext11                  text11       000000
+__Htext12                  text12       000000
+__Htext13                  text13       000000
+__Htext14                  text14       000000
+__Htext15                  text15       000000
+__Htext16                  text16       000000
+__Htext17                  text17       000000
+__Htext18                  text18       000000
+__Htext19                  text19       000000
+__Htext2                   text2        000000
+__Htext20                  text20       000000
+__Htext21                  text21       000000
+__Htext22                  text22       000000
+__Htext3                   text3        000000
+__Htext4                   text4        000000
+__Htext5                   text5        000000
+__Htext6                   text6        000000
+__Htext8                   text8        000000
+__Htext9                   text9        000000
+__LRAM                     (abs)        000001
+__Labs1                    abs1         000000
+__Lbank0                   bank0        000000
+__Lbank1                   bank1        000000
+__Lbank2                   bank2        000000
+__Lbank3                   bank3        000000
+__Lbank4                   bank4        000000
+__Lbank5                   bank5        000000
+__Lbank6                   bank6        000000
+__Lbank7                   bank7        000000
+__Lbigbss                  bigbss       000000
+__Lbigdata                 bigdata      000000
+__Lbigram                  bigram       000000
+__Lbss                     bss          000000
+__LbssCOMRAM               bssCOMRAM    000000
+__Lcinit                   cinit        000000
+__Lclrtext                 clrtext      000000
+__Lcomram                  comram       000000
+__Lconfig                  config       300000
+__Lconst                   const        000000
+__LcstackBANK0             cstackBANK0  000000
+__LcstackCOMRAM            cstackCOMRAM 000000
+__Ldata                    data         000000
+__Leeprom_data             eeprom_data  000000
+__Lend_init                end_init     000018
+__Lfarbss                  farbss       000000
+__Lfardata                 fardata      000000
+__Libigdata                ibigdata     000000
+__Lidata                   idata        000000
+__Lidloc                   idloc        200000
+__Lifardata                ifardata     000000
+__Linit                    init         000018
+__Lintcode                 intcode      000008
+__Lintcode_body            intcode_body 000000
+__Lintcodelo               intcodelo    000018
+__Lintentry                intentry     000000
+__Lintret                  intret       000000
+__Lintsave_regs            intsave_regs 000000
+__Lirdata                  irdata       000000
+__Lmediumconst             mediumconst  000000
+__Lnvbit                   nvbit        000000
+__Lnvrram                  nvrram       000000
+__Lparam                   rparam       000000
+__Lpowerup                 powerup      000018
+__Lram                     ram          000000
+__Lramtop                  ramtop       000800
+__Lrbit                    rbit         000000
+__Lrbss                    rbss         000000
+__Lrdata                   rdata        000000
+__Lreset_vec               reset_vec    000000
+__Lrparam                  rparam       000000
+__Lsfr                     sfr          000000
+__Lsmallconst              smallconst   000800
+__Lstruct                  struct       000000
+__Ltemp                    temp         000000
+__Ltext                    text         000000
+__Ltext0                   text0        000000
+__Ltext1                   text1        000000
+__Ltext10                  text10       000000
+__Ltext11                  text11       000000
+__Ltext12                  text12       000000
+__Ltext13                  text13       000000
+__Ltext14                  text14       000000
+__Ltext15                  text15       000000
+__Ltext16                  text16       000000
+__Ltext17                  text17       000000
+__Ltext18                  text18       000000
+__Ltext19                  text19       000000
+__Ltext2                   text2        000000
+__Ltext20                  text20       000000
+__Ltext21                  text21       000000
+__Ltext22                  text22       000000
+__Ltext3                   text3        000000
+__Ltext4                   text4        000000
+__Ltext5                   text5        000000
+__Ltext6                   text6        000000
+__Ltext8                   text8        000000
+__Ltext9                   text9        000000
+__S0                       (abs)        30000E
+__S1                       (abs)        00006C
+___awdiv                   text13       000D5E
+___awdiv@counter           cstackCOMRAM 00000C
+___awdiv@dividend          cstackCOMRAM 000007
+___awdiv@divisor           cstackCOMRAM 000009
+___awdiv@quotient          cstackCOMRAM 00000E
+___awdiv@sign              cstackCOMRAM 00000D
+___lwdiv                   text15       001040
+___lwdiv@counter           cstackCOMRAM 000008
+___lwdiv@dividend          cstackCOMRAM 000001
+___lwdiv@divisor           cstackCOMRAM 000003
+___lwdiv@quotient          cstackCOMRAM 000006
+___lwmod                   text16       00117C
+___lwmod@counter           cstackCOMRAM 000006
+___lwmod@dividend          cstackCOMRAM 000001
+___lwmod@divisor           cstackCOMRAM 000003
+___wmul                    text17       0012BA
+___wmul@multiplicand       cstackCOMRAM 000003
+___wmul@multiplier         cstackCOMRAM 000001
+___wmul@product            cstackCOMRAM 000005
+__accesstop                (abs)        000060
+__activetblptr             (abs)        000001
+__end_of___awdiv           text13       000E1A
+__end_of___lwdiv           text15       0010AC
+__end_of___lwmod           text16       0011D8
+__end_of___wmul            text17       0012F8
+__end_of__initialization   cinit        0013AC
+__end_of__stringdata       smallconst   000855
+__end_of_clear_line        text10       000FD2
+__end_of_clear_screen      text4        0013D2
+__end_of_control_relay     text11       000BAE
+__end_of_initialize        text5        000C8A
+__end_of_isr               intcode_body 000AAE
+__end_of_itoa              text12       001276
+__end_of_led_bar           text8        000D5E
+__end_of_main              text0        000F54
+__end_of_proc_string       text2        001040
+__end_of_string2screen     text1        00117C
+__end_of_update_lcd_timer  text9        001116
+__end_of_utoa              text14       000ECE
+__end_of_write_char        text3        001324
+__end_of_write_command     text6        001350
+__end_ofi2_clear_screen    text21       0013E0
+__end_ofi2_proc_string     text19       00122C
+__end_ofi2_string2screen   text18       0012BA
+__end_ofi2_write_char      text20       001378
+__end_ofi2_write_command   text22       0013A0
+__initialization           cinit        0013A0
+__mediumconst              mediumconst  000000
+__pbssCOMRAM               bssCOMRAM    00003D
+__pcinit                   cinit        0013A0
+__pcstackBANK0             cstackBANK0  000060
+__pcstackCOMRAM            cstackCOMRAM 000001
+__pintcode                 intcode      000008
+__pintcode_body            intcode_body 000856
+__psmallconst              smallconst   000800
+__ptext0                   text0        000ECE
+__ptext1                   text1        001116
+__ptext10                  text10       000F54
+__ptext11                  text11       000AAE
+__ptext12                  text12       00122C
+__ptext13                  text13       000D5E
+__ptext14                  text14       000E1A
+__ptext15                  text15       001040
+__ptext16                  text16       00117C
+__ptext17                  text17       0012BA
+__ptext18                  text18       001276
+__ptext19                  text19       0011D8
+__ptext2                   text2        000FD2
+__ptext20                  text20       001350
+__ptext21                  text21       0013D2
+__ptext22                  text22       001378
+__ptext3                   text3        0012F8
+__ptext4                   text4        0013BA
+__ptext5                   text5        000BAE
+__ptext6                   text6        001324
+__ptext8                   text8        000C8A
+__ptext9                   text9        0010AC
+__ramtop                   ramtop       000800
+__size_of___awdiv          (abs)        000000
+__size_of___lwdiv          (abs)        000000
+__size_of___lwmod          (abs)        000000
+__size_of___wmul           (abs)        000000
+__size_of_clear_line       (abs)        000000
+__size_of_clear_screen     (abs)        000000
+__size_of_control_relay    (abs)        000000
+__size_of_initialize       (abs)        000000
+__size_of_isr              (abs)        000000
+__size_of_itoa             (abs)        000000
+__size_of_led_bar          (abs)        000000
+__size_of_main             (abs)        000000
+__size_of_proc_string      (abs)        000000
+__size_of_string2screen    (abs)        000000
+__size_of_update_lcd_timer (abs)        000000
+__size_of_utoa             (abs)        000000
+__size_of_write_char       (abs)        000000
+__size_of_write_command    (abs)        000000
+__size_ofi2_clear_screen   (abs)        000000
+__size_ofi2_proc_string    (abs)        000000
+__size_ofi2_string2screen  (abs)        000000
+__size_ofi2_write_char     (abs)        000000
+__size_ofi2_write_command  (abs)        000000
+__smallconst               smallconst   000800
+__stringdata               smallconst   000800
+_clear_line                text10       000F54
+_clear_screen              text4        0013BA
+_control_relay             text11       000AAE
+_initialize                text5        000BAE
+_isr                       intcode      000008
+_itoa                      text12       00122C
+_led_bar                   text8        000C8A
+_main                      text0        000ECE
+_proc_string               text2        000FD2
+_string2screen             text1        001116
+_update_lcd_timer          text9        0010AC
+_utoa                      text14       000E1A
+_write_char                text3        0012F8
+_write_command             text6        001324
+clear_line@i               cstackCOMRAM 000006
+clear_line@location        cstackCOMRAM 000008
+clear_line@pos             cstackCOMRAM 000004
+clear_line@row             cstackCOMRAM 000003
+control_relay@buf          cstackCOMRAM 00001D
+control_relay@value        cstackCOMRAM 00001A
+end_of_initialization      cinit        0013AC
+i2_clear_screen            text21       0013D2
+i2_proc_string             text19       0011D8
+i2_string2screen           text18       001276
+i2_write_char              text20       001350
+i2_write_command           text22       001378
+i2proc_string@string       cstackCOMRAM 000003
+i2string2screen@location   cstackCOMRAM 00000A
+i2string2screen@pos        cstackCOMRAM 000006
+i2string2screen@row        cstackCOMRAM 000005
+i2string2screen@string     cstackCOMRAM 000007
+i2write_char@data          cstackCOMRAM 000001
+i2write_command@data       cstackCOMRAM 000001
+int_func                   intcode_body 000856
+intlevel0                  text         000000
+intlevel1                  text         000000
+intlevel2                  text         000000
+intlevel3                  text         000000
+isr@running                bssCOMRAM    00004F
+itoa@base                  cstackCOMRAM 000016
+itoa@buf                   cstackCOMRAM 000012
+itoa@cp                    cstackCOMRAM 000018
+itoa@val                   cstackCOMRAM 000014
+led_bar@value              cstackCOMRAM 000001
+proc_string@string         cstackBANK0  000062
+start                      init         000018
+start_initialization       cinit        0013A0
+string2screen@location     cstackBANK0  000069
+string2screen@pos          cstackBANK0  000065
+string2screen@row          cstackBANK0  000064
+string2screen@string       cstackBANK0  000066
+update_lcd_timer@buf       cstackCOMRAM 00001C
+utoa@base                  cstackCOMRAM 00000D
+utoa@buf                   cstackCOMRAM 000009
+utoa@c                     cstackCOMRAM 000011
+utoa@v                     cstackCOMRAM 00000F
+utoa@val                   cstackCOMRAM 00000B
+write_char@data            cstackBANK0  000060
+write_command@data         cstackBANK0  000060
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 462 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       2       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels required when called:    8
+ This function calls:
+		_initialize
+		_clear_screen
+		_string2screen
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _string2screen *****************
+ Defined at:
+		line 217 in file "main.c"
+ Parameters:    Size  Location     Type
+  row             1    4[BANK0 ] unsigned char 
+  pos             1    5[BANK0 ] unsigned char 
+  string          2    6[BANK0 ] PTR const unsigned char 
+		 -> STR_9(16), STR_8(14), STR_7(7), STR_6(12), 
+		 -> STR_5(8), STR_4(11), control_relay@buf(16), STR_3(7), 
+		 -> STR_2(10), update_lcd_timer@buf(16), STR_1(7), 
+ Auto vars:     Size  Location     Type
+  location        1    9[BANK0 ] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       4       0       0       0       0       0       0       0
+      Locals:         0       1       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0
+      Totals:         0       6       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_write_command
+		_proc_string
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _proc_string *****************
+ Defined at:
+		line 208 in file "main.c"
+ Parameters:    Size  Location     Type
+  string          2    2[BANK0 ] PTR const unsigned char 
+		 -> STR_9(16), STR_8(14), STR_7(7), STR_6(12), 
+		 -> STR_5(8), STR_4(11), control_relay@buf(16), STR_3(7), 
+		 -> STR_2(10), update_lcd_timer@buf(16), STR_1(7), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       2       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_write_char
+ This function is called by:
+		_string2screen
+ This function uses a non-reentrant model
+
+
+ *************** function _write_char *****************
+ Defined at:
+		line 197 in file "main.c"
+ Parameters:    Size  Location     Type
+  data            1    0[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       1       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_proc_string
+ This function uses a non-reentrant model
+
+
+ *************** function _clear_screen *****************
+ Defined at:
+		line 263 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_write_command
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _initialize *****************
+ Defined at:
+		line 268 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0
+      Totals:         0       1       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_write_command
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _write_command *****************
+ Defined at:
+		line 186 in file "main.c"
+ Parameters:    Size  Location     Type
+  data            1    0[BANK0 ] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       1       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       1       0       0       0       0       0       0       0
+      Totals:         0       2       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		Nothing
+ This function is called by:
+		_string2screen
+		_clear_screen
+		_initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _isr *****************
+ Defined at:
+		line 359 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  buf            16    0        unsigned char [16]
+  status          2    0        int 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:         16       0       0       0       0       0       0       0       0
+      Totals:        16       0       0       0       0       0       0       0       0
+Total ram usage:       16 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		_led_bar
+		_control_relay
+		_update_lcd_timer
+		i2_clear_screen
+		i2_string2screen
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _led_bar *****************
+ Defined at:
+		line 134 in file "main.c"
+ Parameters:    Size  Location     Type
+  value           2    0[COMRAM] int 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_isr
+ This function uses a non-reentrant model
+
+
+ *************** function _update_lcd_timer *****************
+ Defined at:
+		line 253 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  buf            16   27[COMRAM] unsigned char [16]
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:        16       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:        18       0       0       0       0       0       0       0       0
+Total ram usage:       18 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_clear_line
+		i2_string2screen
+		_itoa
+ This function is called by:
+		_isr
+ This function uses a non-reentrant model
+
+
+ *************** function _clear_line *****************
+ Defined at:
+		line 234 in file "main.c"
+ Parameters:    Size  Location     Type
+  row             1    2[COMRAM] unsigned char 
+  pos             1    3[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  i               2    5[COMRAM] int 
+  location        1    7[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_write_command
+		i2_write_char
+ This function is called by:
+		_update_lcd_timer
+ This function uses a non-reentrant model
+
+
+ *************** function _control_relay *****************
+ Defined at:
+		line 332 in file "main.c"
+ Parameters:    Size  Location     Type
+  value           1   25[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  buf            16   28[COMRAM] unsigned char [16]
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         1       0       0       0       0       0       0       0       0
+      Locals:        16       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0
+      Totals:        19       0       0       0       0       0       0       0       0
+Total ram usage:       19 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i2_clear_screen
+		i2_string2screen
+		___wmul
+		___awdiv
+		_itoa
+ This function is called by:
+		_isr
+ This function uses a non-reentrant model
+
+
+ *************** function _itoa *****************
+ Defined at:
+		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v1.12\sources\itoa.c"
+ Parameters:    Size  Location     Type
+  buf             2   17[COMRAM] PTR unsigned char 
+		 -> control_relay@buf(16), update_lcd_timer@buf(16), 
+  val             2   19[COMRAM] int 
+  base            2   21[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  cp              2   23[COMRAM] PTR unsigned char 
+		 -> control_relay@buf(16), update_lcd_timer@buf(16), 
+ Return value:  Size  Location     Type
+                  2   17[COMRAM] PTR unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		_utoa
+ This function is called by:
+		_update_lcd_timer
+		_control_relay
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 10 in file "C:\Program Files (x86)\Microchip\xc8\v1.12\sources\awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    6[COMRAM] int 
+  divisor         2    8[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  quotient        2   13[COMRAM] int 
+  sign            1   12[COMRAM] unsigned char 
+  counter         1   11[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    6[COMRAM] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_control_relay
+ This function uses a non-reentrant model
+
+
+ *************** function _utoa *****************
+ Defined at:
+		line 18 in file "C:\Program Files (x86)\Microchip\xc8\v1.12\sources\itoa.c"
+ Parameters:    Size  Location     Type
+  buf             2    8[COMRAM] PTR unsigned char 
+		 -> control_relay@buf(16), update_lcd_timer@buf(16), 
+  val             2   10[COMRAM] unsigned int 
+  base            2   12[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  v               2   14[COMRAM] unsigned int 
+  c               1   16[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    8[COMRAM] PTR unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         6       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         9       0       0       0       0       0       0       0       0
+Total ram usage:        9 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		___lwdiv
+		___lwmod
+ This function is called by:
+		_itoa
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwdiv *****************
+ Defined at:
+		line 10 in file "C:\Program Files (x86)\Microchip\xc8\v1.12\sources\lwdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[COMRAM] unsigned int 
+  divisor         2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  quotient        2    5[COMRAM] unsigned int 
+  counter         1    7[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         3       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_utoa
+ This function uses a non-reentrant model
+
+
+ *************** function ___lwmod *****************
+ Defined at:
+		line 10 in file "C:\Program Files (x86)\Microchip\xc8\v1.12\sources\lwmod.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[COMRAM] unsigned int 
+  divisor         2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  counter         1    5[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_utoa
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 3 in file "C:\Program Files (x86)\Microchip\xc8\v1.12\sources\wmul.c"
+ Parameters:    Size  Location     Type
+  multiplier      2    0[COMRAM] unsigned int 
+  multiplicand    2    2[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2    4[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_control_relay
+ This function uses a non-reentrant model
+
+
+ *************** function i2_string2screen *****************
+ Defined at:
+		line 217 in file "main.c"
+ Parameters:    Size  Location     Type
+  string2scree    1    4[COMRAM] unsigned char 
+  string2scree    1    5[COMRAM] unsigned char 
+  string2scree    2    6[COMRAM] PTR const unsigned char 
+		 -> STR_9(16), STR_8(14), STR_7(7), STR_6(12), 
+		 -> STR_5(8), STR_4(11), control_relay@buf(16), STR_3(7), 
+		 -> STR_2(10), update_lcd_timer@buf(16), STR_1(7), 
+ Auto vars:     Size  Location     Type
+  string2scree    1    9[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         4       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i2_write_command
+		i2_proc_string
+ This function is called by:
+		_update_lcd_timer
+		_control_relay
+		_isr
+ This function uses a non-reentrant model
+
+
+ *************** function i2_proc_string *****************
+ Defined at:
+		line 208 in file "main.c"
+ Parameters:    Size  Location     Type
+  proc_string     2    2[COMRAM] PTR const unsigned char 
+		 -> STR_9(16), STR_8(14), STR_7(7), STR_6(12), 
+		 -> STR_5(8), STR_4(11), control_relay@buf(16), STR_3(7), 
+		 -> STR_2(10), update_lcd_timer@buf(16), STR_1(7), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, fsr0l, fsr0h, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         2       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_write_char
+ This function is called by:
+		i2_string2screen
+ This function uses a non-reentrant model
+
+
+ *************** function i2_write_char *****************
+ Defined at:
+		line 197 in file "main.c"
+ Parameters:    Size  Location     Type
+  write_char      1    0[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         1       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_clear_line
+		i2_proc_string
+ This function uses a non-reentrant model
+
+
+ *************** function i2_clear_screen *****************
+ Defined at:
+		line 263 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_write_command
+ This function is called by:
+		_control_relay
+		_isr
+ This function uses a non-reentrant model
+
+
+ *************** function i2_write_command *****************
+ Defined at:
+		line 186 in file "main.c"
+ Parameters:    Size  Location     Type
+  write_comman    1    0[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+		None               void
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         1       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_clear_line
+		i2_string2screen
+		i2_clear_screen
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+shared
+		i2_write_char  		CODE           	1350	0000	40
+		__stringdata   		SMALLCONST     	0800	0000	85
+		__initializatio		CODE           	13A0	0000	12
+		i2_string2scree		CODE           	1276	0000	68
+		i2_write_comman		CODE           	1378	0000	40
+		i2_clear_screen		CODE           	13D2	0000	14
+		i2_proc_string 		CODE           	11D8	0000	84
+
+shared estimated size: 343
+
+main.c
+		_main          		CODE           	0ECE	0000	134
+		_control_relay 		CODE           	0AAE	0000	256
+		_write_char    		CODE           	12F8	0000	44
+		_led_bar       		CODE           	0C8A	0000	212
+		_isr           		CODE           	0008	0000	2726
+		_write_command 		CODE           	1324	0000	44
+		_update_lcd_tim		CODE           	10AC	0000	106
+		_clear_screen  		CODE           	13BA	0000	24
+		_string2screen 		CODE           	1116	0000	102
+		_clear_line    		CODE           	0F54	0000	126
+		_proc_string   		CODE           	0FD2	0000	110
+		_initialize    		CODE           	0BAE	0000	220
+
+main.c estimated size: 4104
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\wmul.c
+		___wmul        		CODE           	12BA	0000	62
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\wmul.c estimated size: 62
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\lwmod.c
+		___lwmod       		CODE           	117C	0000	92
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\lwmod.c estimated size: 92
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\awdiv.c
+		___awdiv       		CODE           	0D5E	0000	188
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\awdiv.c estimated size: 188
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\itoa.c
+		_itoa          		CODE           	122C	0000	74
+		_utoa          		CODE           	0E1A	0000	180
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\itoa.c estimated size: 254
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\lwdiv.c
+		___lwdiv       		CODE           	1040	0000	108
+
+C:\Program Files (x86)\Microchip\xc8\v1.12\sources\lwdiv.c estimated size: 108
+
